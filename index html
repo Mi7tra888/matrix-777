@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>МАТРИЦА-777 | Единство в любви</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  background: radial-gradient(circle, #183d62, #071323 75%);
+  min-height: 100vh;
+}
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 45px 22px;
+}
+h1 {
+  color: #ffe5a0;
+  font-size: clamp(32px, 8vw, 58px);
+  letter-spacing: 5px;
+}
+.symbol {
+  font-size: 75px;
+  color: #ffe5a0;
+  margin: 25px;
+  text-shadow: 0 0 30px #ffe5a0;
+}
+h2 {
+  color: #ffdf9a;
+  font-size: 27px;
+}
+p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+.manifest {
+  border: 1px solid #b9a66d;
+  border-radius: 18px;
+  padding: 25px;
+  margin-top: 30px;
+  background: #ffffff0b;
+}
+button {
+  margin-top: 30px;
+  padding: 16px 28px;
+  border: 1px solid #ffe5a0;
+  border-radius: 30px;
+  background: #d9b96e;
+  color: #10233a;
+  font-size: 18px;
+  font-weight: bold;
+}
+#message {
+  color: #ffe5a0;
+  margin-top: 25px;
+  min-height: 55px;
+}
+footer {
+  padding: 30px 10px;
+  color: #b9c9db;
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="symbol">✧</div>
+  <h1>МАТРИЦА-777</h1>
+  <h2>ЕДИНСТВО В ЛЮБВИ</h2>
+
+  <p>
+    Мир начинается с сердца человека.
+    Каждый добрый поступок становится
+    частью общего созидания.
+  </p>
+
+  <section class="manifest">
+    <h2>НАШ МАНИФЕСТ</h2>
+    <p>Мы выбираем безусловную любовь.</p>
+    <p>Мы объединяемся через сострадание.</p>
+    <p>Мы уважаем свободу выбора каждого.</p>
+    <p>Мы созидаем, а не разрушаем.</p>
+    <p>Мы бережём жизнь и нашу планету.</p>
+    <p>Мы верим, что доброта способна менять мир.</p>
+  </section>
+
+  <h2>ЕДИНЫЙ ИМПУЛЬС СОЗИДАНИЯ</h2>
+  <p>
+    Не нужно принуждать.
+    Не нужно убеждать.
+    Достаточно однажды выбрать любовь
+    и воплотить её в поступке.
+  </p>
+
+  <button onclick="document.getElementById('message').innerText='Пусть каждый твой поступок станет частицей добра. Свет начинается с тебя.'">
+    ПЕРЕДАТЬ ИМПУЛЬС ❤️
+  </button>
+
+  <p id="message"></p>
+
+  <footer>
+    МАТРИЦА-777 · ЛЮБОВЬ · СОСТРАДАНИЕ · СОЗИДАНИЕ
+  </footer>
+</main>
+</body>
+</html>
