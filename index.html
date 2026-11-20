@@ -1,111 +1,79 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>МАТРИЦА-777 | Единство в любви</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="МАТРИЦА-777 — открытое международное сообщество людей, объединённых безусловной любовью ко всему сущему, состраданием и созиданием.">
+<meta name="theme-color" content="#101a2b">
+<title>МАТРИЦА-777 — Единство в миллиардах</title>
 <style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #fff;
-  text-align: center;
-  background: radial-gradient(circle, #183d62, #071323 75%);
-  min-height: 100vh;
-}
-main {
-  max-width: 850px;
-  margin: auto;
-  padding: 45px 22px;
-}
-h1 {
-  color: #ffe5a0;
-  font-size: clamp(32px, 8vw, 58px);
-  letter-spacing: 5px;
-}
-.symbol {
-  font-size: 75px;
-  color: #ffe5a0;
-  margin: 25px;
-  text-shadow: 0 0 30px #ffe5a0;
-}
-h2 {
-  color: #ffdf9a;
-  font-size: 27px;
-}
-p {
-  font-size: 19px;
-  line-height: 1.8;
-}
-.manifest {
-  border: 1px solid #b9a66d;
-  border-radius: 18px;
-  padding: 25px;
-  margin-top: 30px;
-  background: #ffffff0b;
-}
-button {
-  margin-top: 30px;
-  padding: 16px 28px;
-  border: 1px solid #ffe5a0;
-  border-radius: 30px;
-  background: #d9b96e;
-  color: #10233a;
-  font-size: 18px;
-  font-weight: bold;
-}
-#message {
-  color: #ffe5a0;
-  margin-top: 25px;
-  min-height: 55px;
-}
-footer {
-  padding: 30px 10px;
-  color: #b9c9db;
-}
+:root{--bg:#101a2b;--panel:#17263b;--gold:#e8c77b;--text:#f4f0e6;--muted:#c1c9d3;--line:#34465d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#263c58 0,#101a2b 52%);color:var(--text);font:17px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{width:min(100% - 36px,980px);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.brand{font-weight:800;letter-spacing:.12em;color:var(--gold)}button,.btn{border:1px solid var(--gold);background:transparent;color:var(--gold);padding:9px 15px;border-radius:30px;font:inherit;text-decoration:none;cursor:pointer}.hero{text-align:center;padding:76px 0 64px}.symbol{font-size:44px;color:var(--gold);letter-spacing:.18em}.eyebrow{color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:13px}.hero h1{font-size:clamp(36px,7vw,66px);line-height:1.08;margin:18px 0}.hero h2{font-size:clamp(19px,3vw,26px);font-weight:400;color:var(--muted);margin:0 auto 26px}.lead{max-width:760px;margin:0 auto;color:var(--text);font-size:19px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}.primary{background:var(--gold);color:#172033;font-weight:700}.section{padding:44px 0;border-top:1px solid var(--line)}h3{font-size:27px;color:var(--gold);margin:0 0 14px}.section p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:22px}.tile{background:rgba(23,38,59,.82);border:1px solid var(--line);border-radius:16px;padding:20px}.tile h4{color:var(--gold);font-size:19px;margin:0 0 8px}.tile p{margin:0}.quote{font-size:clamp(22px,4vw,32px);line-height:1.35;text-align:center;color:var(--text);padding:30px 12px}.small{font-size:14px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted);font-size:14px}a{color:var(--gold)}[hidden]{display:none!important}
 </style>
 </head>
 <body>
+<header class="wrap top">
+  <div class="brand">МАТРИЦА-777</div>
+  <button id="lang" type="button" aria-label="Switch language">EN</button>
+</header>
 <main>
-  <div class="symbol">✧</div>
-  <h1>МАТРИЦА-777</h1>
-  <h2>ЕДИНСТВО В ЛЮБВИ</h2>
-
-  <p>
-    Мир начинается с сердца человека.
-    Каждый добрый поступок становится
-    частью общего созидания.
-  </p>
-
-  <section class="manifest">
-    <h2>НАШ МАНИФЕСТ</h2>
-    <p>Мы выбираем безусловную любовь.</p>
-    <p>Мы объединяемся через сострадание.</p>
-    <p>Мы уважаем свободу выбора каждого.</p>
-    <p>Мы созидаем, а не разрушаем.</p>
-    <p>Мы бережём жизнь и нашу планету.</p>
-    <p>Мы верим, что доброта способна менять мир.</p>
-  </section>
-
-  <h2>ЕДИНЫЙ ИМПУЛЬС СОЗИДАНИЯ</h2>
-  <p>
-    Не нужно принуждать.
-    Не нужно убеждать.
-    Достаточно однажды выбрать любовь
-    и воплотить её в поступке.
-  </p>
-
-  <button onclick="document.getElementById('message').innerText='Пусть каждый твой поступок станет частицей добра. Свет начинается с тебя.'">
-    ПЕРЕДАТЬ ИМПУЛЬС ❤️
-  </button>
-
-  <p id="message"></p>
-
-  <footer>
-    МАТРИЦА-777 · ЛЮБОВЬ · СОСТРАДАНИЕ · СОЗИДАНИЕ
-  </footer>
+<section class="wrap hero" id="home">
+  <div class="symbol" aria-hidden="true">◇ • ◇</div>
+  <div class="eyebrow" data-ru="Открытое пространство единства" data-en="An open space for unity">Открытое пространство единства</div>
+  <h1 data-ru="ЕДИНСТВО В МИЛЛИАРДАХ" data-en="UNITY AMONG BILLIONS">ЕДИНСТВО В МИЛЛИАРДАХ</h1>
+  <h2 data-ru="Любовь • Сострадание • Созидание" data-en="Love • Compassion • Creation">Любовь • Сострадание • Созидание</h2>
+  <p class="lead" data-ru="Международное сообщество людей, которые стремятся строить человеческие отношения на безусловной любви ко всему сущему — и воплощать это отношение в простых, реальных делах." data-en="An international community of people seeking to build human relationships on unconditional love for all that exists — and to express that commitment through simple, real actions.">Международное сообщество людей, которые стремятся строить человеческие отношения на безусловной любви ко всему сущему — и воплощать это отношение в простых, реальных делах.</p>
+  <div class="actions">
+    <a class="btn primary" href="#principles" data-ru="Познакомиться с принципами" data-en="Explore our principles">Познакомиться с принципами</a>
+    <a class="btn" href="#participate" data-ru="Как участвовать" data-en="How to participate">Как участвовать</a>
+  </div>
+</section>
+<section class="wrap section" id="mission">
+  <h3 data-ru="Наша миссия" data-en="Our mission">Наша миссия</h3>
+  <p data-ru="Создавать открытое пространство, в котором люди из разных стран, культур и мировоззрений могут встречаться, общаться и объединяться ради добрых дел. Здесь важны не статус и громкие слова, а уважение к достоинству каждого, свобода выбора и готовность помогать." data-en="To create an open space where people from different countries, cultures and worldviews can meet, communicate and join efforts for good. What matters here is not status or grand words, but respect for each person's dignity, freedom of choice and willingness to help.">Создавать открытое пространство, в котором люди из разных стран, культур и мировоззрений могут встречаться, общаться и объединяться ради добрых дел. Здесь важны не статус и громкие слова, а уважение к достоинству каждого, свобода выбора и готовность помогать.</p>
+  <div class="quote" data-ru="Любовь становится общей силой, когда превращается в поступок." data-en="Love becomes a shared force when it becomes an action.">Любовь становится общей силой, когда превращается в поступок.</div>
+</section>
+<section class="wrap section" id="principles">
+  <h3 data-ru="Принципы сообщества" data-en="Community principles">Принципы сообщества</h3>
+  <div class="grid">
+    <article class="tile"><h4 data-ru="Достоинство и уважение" data-en="Dignity and respect">Достоинство и уважение</h4><p data-ru="Каждый человек ценен. Мы не унижаем, не преследуем и не исключаем людей за их происхождение, взгляды или образ жизни." data-en="Every person has worth. We do not demean, harass or exclude people because of their background, views or way of life.">Каждый человек ценен. Мы не унижаем, не преследуем и не исключаем людей за их происхождение, взгляды или образ жизни.</p></article>
+    <article class="tile"><h4 data-ru="Свобода без принуждения" data-en="Freedom without coercion">Свобода без принуждения</h4><p data-ru="Нет обязательной веры, идеологии, лидера или единственно правильного пути. Участие добровольно, несогласие допустимо." data-en="There is no required belief, ideology, leader or single correct path. Participation is voluntary, and disagreement is allowed.">Нет обязательной веры, идеологии, лидера или единственно правильного пути. Участие добровольно, несогласие допустимо.</p></article>
+    <article class="tile"><h4 data-ru="Сострадание в действии" data-en="Compassion in action">Сострадание в действии</h4><p data-ru="Мы поддерживаем взаимопомощь, внимательное общение и инициативы, которые уменьшают страдание и приносят пользу." data-en="We support mutual aid, thoughtful communication and initiatives that reduce suffering and bring benefit.">Мы поддерживаем взаимопомощь, внимательное общение и инициативы, которые уменьшают страдание и приносят пользу.</p></article>
+    <article class="tile"><h4 data-ru="Забота обо всём живом" data-en="Care for the living world">Забота обо всём живом</h4><p data-ru="Земля, природа и животные — не фон нашей жизни, а мир, частью которого мы являемся." data-en="Earth, nature and animals are not the backdrop to our lives; they are the living world of which we are part.">Земля, природа и животные — не фон нашей жизни, а мир, частью которого мы являемся.</p></article>
+    <article class="tile"><h4 data-ru="Равное участие" data-en="Shared participation">Равное участие</h4><p data-ru="Инициативы могут рождаться у любого участника. Координаторы выбираются открыто и подотчётны сообществу." data-en="Initiatives can begin with any participant. Coordinators are chosen transparently and are accountable to the community.">Инициативы могут рождаться у любого участника. Координаторы выбираются открыто и подотчётны сообществу.</p></article>
+    <article class="tile"><h4 data-ru="Честность и безопасность" data-en="Honesty and safety">Честность и безопасность</h4><p data-ru="Мы не допускаем травлю, мошенничество, угрозы и манипуляции. Личные данные и границы участников уважаются." data-en="Harassment, fraud, threats and manipulation are not acceptable. Participants' personal data and boundaries are respected.">Мы не допускаем травлю, мошенничество, угрозы и манипуляции. Личные данные и границы участников уважаются.</p></article>
+  </div>
+</section>
+<section class="wrap section" id="participate">
+  <h3 data-ru="Как может участвовать каждый" data-en="How anyone can take part">Как может участвовать каждый</h3>
+  <div class="grid">
+    <article class="tile"><h4 data-ru="Поддержать человека" data-en="Support someone">Поддержать человека</h4><p data-ru="Выслушать, поделиться знаниями, помочь делом или связать человека с теми, кто может помочь." data-en="Listen, share knowledge, offer practical help or connect someone with people who can assist.">Выслушать, поделиться знаниями, помочь делом или связать человека с теми, кто может помочь.</p></article>
+    <article class="tile"><h4 data-ru="Позаботиться о Земле" data-en="Care for the Earth">Позаботиться о Земле</h4><p data-ru="Организовать уборку, посадку растений, экологическую инициативу или бережное просвещение." data-en="Organize a clean-up, plant trees, start an environmental initiative or share practical knowledge.">Организовать уборку, посадку растений, экологическую инициативу или бережное просвещение.</p></article>
+    <article class="tile"><h4 data-ru="Создать инициативу" data-en="Start an initiative">Создать инициативу</h4><p data-ru="Предложить идею, найти единомышленников и вместе определить прозрачные и посильные шаги." data-en="Share an idea, find collaborators and agree on transparent, achievable steps together.">Предложить идею, найти единомышленников и вместе определить прозрачные и посильные шаги.</p></article>
+  </div>
+  <p class="small" data-ru="Коммуникационные функции — регистрация, публикации, группы и обсуждения — будут подключаться отдельными этапами. Сейчас эта страница знакомит с замыслом и принципами; она пока не принимает аккаунты и сообщения." data-en="Community features — accounts, posts, groups and discussions — will be added in separate stages. For now, this page introduces the mission and principles; it does not yet accept accounts or messages.">Коммуникационные функции — регистрация, публикации, группы и обсуждения — будут подключаться отдельными этапами. Сейчас эта страница знакомит с замыслом и принципами; она пока не принимает аккаунты и сообщения.</p>
+</section>
+<section class="wrap section">
+  <h3 data-ru="Сообщество без культа личности" data-en="A community without a personality cult">Сообщество без культа личности</h3>
+  <p data-ru="МАТРИЦА-777 не строится вокруг основателя или единственного центра. Замысел — создать пространство, которое принадлежит своим участникам: они могут открывать тематические и местные группы, предлагать проекты, выбирать координаторов и участвовать в общих решениях. Ни один человек не получает права говорить от имени всех." data-en="MATRIX-777 is not built around a founder or a single centre. The aim is to create a space shaped by its participants: they can open local and topic groups, propose projects, choose coordinators and take part in shared decisions. No one person has the right to speak for everyone.">МАТРИЦА-777 не строится вокруг основателя или единственного центра. Замысел — создать пространство, которое принадлежит своим участникам: они могут открывать тематические и местные группы, предлагать проекты, выбирать координаторов и участвовать в общих решениях. Ни один человек не получает права говорить от имени всех.</p>
+</section>
 </main>
+<footer><div class="wrap">
+  <div><strong>МАТРИЦА-777 · ЕДИНСТВО В МИЛЛИАРДАХ</strong></div>
+  <p data-ru="Открытое сообщество. Добровольное участие. Уважение к каждому." data-en="An open community. Voluntary participation. Respect for everyone.">Открытое сообщество. Добровольное участие. Уважение к каждому.</p>
+  <p><a href="https://github.com/Mi7tra888/matrix-777">Репозиторий проекта</a></p>
+  <p class="small">© МАТРИЦА-777</p>
+</div></footer>
+<script>
+const langButton=document.getElementById('lang');
+let current='ru';
+langButton.addEventListener('click',()=>{
+ current=current==='ru'?'en':'ru';
+ document.documentElement.lang=current;
+ document.querySelectorAll('[data-ru]').forEach(el=>{el.textContent=el.dataset[current]});
+ langButton.textContent=current==='ru'?'EN':'RU';
+});
+</script>
 </body>
 </html>
