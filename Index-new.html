@@ -1,441 +1,599 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101c2b">
-<meta name="description" content="МАТРИЦА-777 — пространство человечности, сострадания и заботы обо всём живом.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="МАТРИЦА-777 — международное пространство единства, взаимопомощи, безусловной любви и заботы о Земле.">
 <title>МАТРИЦА-777 — Единство в миллиардах</title>
+
 <style>
 :root {
-  --night: #101c2b;
-  --blue: #1b3042;
-  --gold: #dfc18a;
-  --cream: #f5efe3;
-  --paper: #fffaf1;
-  --ink: #293b4c;
-  --muted: #687580;
+  --night: #102337;
+  --blue: #183b55;
+  --gold: #d9b96e;
+  --cream: #f7f5ef;
+  --white: #ffffff;
+  --text: #263746;
+  --muted: #687985;
 }
+
 * { box-sizing: border-box; }
+
 html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
   background: var(--cream);
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.65;
+  color: var(--text);
+  line-height: 1.7;
 }
-.wrap {
-  width: min(1100px, calc(100% - 36px));
-  margin: auto;
-}
+
+a { color: inherit; }
+
 header {
-  background: var(--night);
-  color: var(--cream);
-  border-bottom: 1px solid rgba(223,193,138,.35);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(16,35,55,.97);
+  color: white;
+  box-shadow: 0 3px 16px rgba(0,0,0,.15);
 }
-nav {
-  min-height: 76px;
+
+.nav-wrap {
+  max-width: 1150px;
+  margin: auto;
+  padding: 14px 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 20px;
 }
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.brand-symbol {
-  width: 43px;
-  height: 43px;
-  border: 1px solid var(--gold);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+
+.logo {
   color: var(--gold);
-  font-size: 24px;
-}
-.brand-name {
-  font: bold 14px Arial, sans-serif;
-  letter-spacing: .15em;
-}
-.brand-sub {
-  color: #c9c2b5;
-  font: 11px Arial, sans-serif;
-  letter-spacing: .08em;
-}
-.nav-links {
-  display: flex;
-  gap: 22px;
-  font: 13px Arial, sans-serif;
-}
-.nav-links a {
-  color: var(--cream);
+  font-size: 21px;
+  font-weight: bold;
   text-decoration: none;
+  white-space: nowrap;
 }
-.nav-links a:hover { color: var(--gold); }
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding: 72px 0 68px;
-  text-align: center;
-  color: #fff8eb;
-  background:
-    radial-gradient(ellipse at 50% 105%,
-    #59606a 0%, #293e50 38%, #101c2b 78%);
-}
-.hero::before,
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%,-50%);
-  border: 1px solid rgba(223,193,138,.18);
-  border-radius: 50%;
-  width: 560px;
-  height: 560px;
-  pointer-events: none;
-}
-.hero::after {
-  width: 760px;
-  height: 760px;
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 850px;
-  margin: auto;
-}
-.eyebrow {
-  color: var(--gold);
-  font: 11px Arial, sans-serif;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-}
-h1 {
-  margin: 20px 0;
-  font-weight: normal;
-  font-size: clamp(36px, 6vw, 64px);
-  line-height: 1.13;
-}
-h1 span { color: var(--gold); }
-.hero-text {
-  max-width: 700px;
-  margin: auto;
-  color: #e9e3d9;
-  font-size: clamp(17px, 2.3vw, 21px);
-}
-.earth-art {
-  display: block;
-  width: min(100%, 620px);
-  height: auto;
-  margin: 30px auto 10px;
-}
-.hero-caption {
-  color: #d9d0c1;
-  font: 11px Arial, sans-serif;
-  letter-spacing: .16em;
-}
-.buttons {
+
+nav {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 28px;
+  justify-content: flex-end;
+  gap: 17px;
 }
-.btn {
-  display: inline-block;
-  padding: 12px 23px;
-  border-radius: 30px;
+
+nav a {
+  color: white;
   text-decoration: none;
-  font: 13px Arial, sans-serif;
+  font-size: 14px;
 }
-.btn-gold {
-  background: var(--gold);
-  color: var(--night);
-}
-.btn-outline {
+
+nav a:hover { color: var(--gold); }
+
+.menu-button {
+  display: none;
+  background: transparent;
+  color: white;
   border: 1px solid var(--gold);
-  color: var(--cream);
+  padding: 8px 12px;
+  border-radius: 7px;
+  font-size: 19px;
 }
-.btn:hover { opacity: .85; }
-section { padding: 70px 0; }
-.section-heading {
-  max-width: 760px;
-  margin: 0 auto 35px;
+
+.hero {
+  min-height: 570px;
+  padding: 100px 22px 90px;
   text-align: center;
+  color: white;
+  background:
+    radial-gradient(circle at 50% 35%, #315b70 0%, transparent 48%),
+    linear-gradient(145deg, #0b1d30, #183c53 65%, #102337);
 }
-.kicker {
-  color: #947641;
-  font: 11px Arial, sans-serif;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-}
-h2 {
-  margin: 12px 0;
-  color: var(--ink);
-  font-size: clamp(29px, 4vw, 42px);
-  font-weight: normal;
+
+.infinity {
+  color: var(--gold);
+  font-size: 82px;
   line-height: 1.2;
 }
-.section-heading p {
+
+.hero h1 {
+  font-size: clamp(34px, 6vw, 58px);
+  margin: 15px 0;
+  letter-spacing: 2px;
+}
+
+.hero .subtitle {
+  font-size: clamp(19px, 3vw, 26px);
+  color: #ead9ae;
+}
+
+.hero p {
+  max-width: 730px;
+  margin: 25px auto;
+  font-size: 18px;
+}
+
+.main-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 13px 25px;
+  border: 1px solid var(--gold);
+  border-radius: 30px;
+  color: var(--night);
+  background: var(--gold);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-button:hover {
+  background: white;
+}
+
+section {
+  padding: 75px 22px;
+  scroll-margin-top: 75px;
+}
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--blue);
+  font-size: clamp(27px, 4vw, 36px);
+  margin: 0 0 18px;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 38px;
   color: var(--muted);
   font-size: 17px;
 }
-.mission { background: var(--paper); }
-.quote {
+
+.mission {
+  background: white;
+}
+
+.mission-quote {
   max-width: 850px;
-  margin: auto;
-  padding: 32px 20px;
-  border-top: 1px solid #d8c69f;
-  border-bottom: 1px solid #d8c69f;
+  margin: 30px auto;
+  padding: 28px;
+  border-left: 4px solid var(--gold);
+  background: #f8f5eb;
+  color: var(--blue);
+  font-size: 23px;
   text-align: center;
 }
-.quote p {
-  margin: 0;
-  color: #34465a;
-  font-size: clamp(23px, 3.3vw, 34px);
-  line-height: 1.4;
+
+.principles {
+  background: #edf1f2;
 }
-.quote small {
-  display: block;
-  margin-top: 15px;
-  color: #8a795c;
-  font: 11px Arial, sans-serif;
-  letter-spacing: .15em;
-}
-.values { background: #eae4d8; }
-.value-grid {
+
+.cards {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-.value-card {
-  padding: 24px;
-  border: 1px solid #e0d5c2;
-  border-radius: 14px;
-  background: rgba(255,250,240,.85);
+
+.card {
+  background: white;
+  padding: 25px 22px;
+  border-radius: 13px;
+  box-shadow: 0 5px 20px rgba(20,45,60,.06);
 }
-.value-card h3 {
-  margin: 0 0 8px;
-  font-size: 20px;
-  font-weight: normal;
+
+.card .symbol {
+  font-size: 34px;
+  color: #b18b42;
 }
-.value-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
+
+.card h3 {
+  color: var(--blue);
+  margin: 8px 0;
 }
-.symbol {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  margin-bottom: 13px;
-  border-radius: 50%;
-  background: #f1e6ce;
-  color: #8d7040;
-  font-size: 22px;
+
+.gallery {
+  background: white;
 }
+
+.community {
+  background: #edf1f2;
+}
+
+.earth {
+  color: white;
+  background: linear-gradient(140deg, #102c3c, #1e5360);
+}
+
+.earth .section-title { color: #ead9ae; }
+
+.earth .section-intro { color: #e0e9e8; }
+
+.earth .card {
+  background: rgba(255,255,255,.09);
+  color: white;
+  box-shadow: none;
+  border: 1px solid rgba(255,255,255,.15);
+}
+
+.earth .card h3 { color: #ead9ae; }
+
 .closing {
-  padding: 60px 0;
-  background: #e9e2d5;
   text-align: center;
+  background: white;
 }
+
 .closing p {
-  max-width: 800px;
-  margin: auto;
-  color: #34465a;
-  font-size: clamp(22px,3vw,31px);
+  max-width: 760px;
+  margin: 20px auto;
+  font-size: 19px;
 }
+
 footer {
-  padding: 25px 0;
-  background: #0b1420;
-  color: #c9c2b5;
+  padding: 32px 20px;
   text-align: center;
-  font: 12px Arial, sans-serif;
+  background: var(--night);
+  color: #d8e0e5;
 }
-@media(max-width:700px) {
-  .nav-links { gap: 10px; font-size: 11px; }
-  .nav-links a:nth-child(2) { display:none; }
-  .hero { padding: 55px 0; }
-  section { padding: 52px 0; }
-  .value-grid { grid-template-columns: 1fr; }
+
+footer strong { color: var(--gold); }
+
+@media (max-width: 760px) {
+  .nav-wrap { flex-wrap: wrap; }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  nav.open { display: flex; }
+
+  nav a {
+    padding: 11px 4px;
+    border-top: 1px solid rgba(255,255,255,.12);
+  }
+
+  .cards { grid-template-columns: 1fr; }
+
+  .hero {
+    min-height: 500px;
+    padding-top: 75px;
+  }
+
+  section { padding: 58px 18px; }
 }
 </style>
 </head>
+
 <body>
 
 <header>
- <div class="wrap">
-  <nav>
-   <div class="brand">
-    <div class="brand-symbol">✧</div>
-    <div>
-     <div class="brand-name">МАТРИЦА-777</div>
-     <div class="brand-sub">ЕДИНСТВО В МИЛЛИАРДАХ</div>
-    </div>
-   </div>
-   <div class="nav-links">
-    <a href="#about">О замысле</a>
-    <a href="#values">Принципы</a>
-    <a href="#gallery">Галерея добра</a>
-   </div>
-  </nav>
- </div>
+  <div class="nav-wrap">
+    <a class="logo" href="#home">МАТРИЦА-777</a>
+
+    <button class="menu-button" id="menuButton"
+      aria-label="Открыть меню" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navigation">
+      <a href="#home">Главная</a>
+      <a href="#mission">Наша миссия</a>
+      <a href="#principles">Принципы</a>
+      <a href="#gallery">Добрые дела</a>
+      <a href="#community">Сообщество</a>
+      <a href="#earth">Планета</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-<section class="hero">
- <div class="wrap hero-content">
-  <div class="eyebrow">Пространство человеческого единства</div>
 
-  <h1>
-   Мир становится светлее,<br>
-   <span>когда мы бережём друг друга</span>
-  </h1>
+<section class="hero" id="home">
+  <div class="infinity">∞</div>
+  <h1>МАТРИЦА-777</h1>
+  <div class="subtitle">Единство в миллиардах</div>
 
-  <p class="hero-text">
-   Место, где доброта становится действием,
-   сострадание — поддержкой, а забота
-   обо всём живом — общим делом.
+  <p>
+    Пространство, где люди разных стран, культур и взглядов
+    могут встречаться, поддерживать друг друга и вместе
+    создавать более человечный мир.
   </p>
 
-  <svg class="earth-art" viewBox="0 0 720 270"
-       role="img" aria-label="Земля — наш общий дом">
-   <defs>
-    <radialGradient id="earth" cx="45%" cy="30%">
-     <stop offset="0" stop-color="#9bb5a1"/>
-     <stop offset=".7" stop-color="#426b69"/>
-     <stop offset="1" stop-color="#203c4a"/>
-    </radialGradient>
-   </defs>
-
-   <circle cx="360" cy="150" r="105"
-           fill="none" stroke="#dfc18a"
-           stroke-opacity=".23"/>
-   <circle cx="360" cy="150" r="85"
-           fill="none" stroke="#dfc18a"
-           stroke-opacity=".4" stroke-dasharray="2 8"/>
-   <circle cx="360" cy="150" r="65"
-           fill="url(#earth)" stroke="#e6cf9e"/>
-
-   <path d="M316 116q20-18 36-7l7 17-15 11-3 19-20-7-13-19z
-            M375 100l28 10 11 22-18 9-4 25-22-8-7-22 13-14z
-            M333 171l22-5 18 18-9 26-23-3-16-17z"
-         fill="#a5b99a" opacity=".8"/>
-
-   <g stroke="#dfc18a" stroke-opacity=".65">
-    <path d="M360 13V74 M360 226v31 M220 150h72
-             M428 150h72 M263 53l51 51 M406 196l51 51
-             M457 53l-51 51 M314 196l-51 51"/>
-   </g>
-   <g fill="#f0dcae">
-    <circle cx="220" cy="150" r="4"/>
-    <circle cx="500" cy="150" r="4"/>
-    <circle cx="360" cy="13" r="4"/>
-    <circle cx="360" cy="257" r="4"/>
-    <circle cx="263" cy="53" r="3"/>
-    <circle cx="457" cy="53" r="3"/>
-    <circle cx="263" cy="247" r="3"/>
-    <circle cx="457" cy="247" r="3"/>
-   </g>
-   <path d="M337 145q23-24 46 0q-23 29-46 0z"
-         fill="none" stroke="#f6e6c2" stroke-width="1.5"/>
-   <path d="M360 133v24" stroke="#f6e6c2"/>
-  </svg>
-
-  <div class="hero-caption">
-   ОДИН МИР · МНОГО СЕРДЕЦ · ОБЩАЯ ОТВЕТСТВЕННОСТЬ
-  </div>
-
-  <div class="buttons">
-   <a class="btn btn-gold" href="#about">Узнать о проекте</a>
-   <a class="btn btn-outline" href="#gallery">Увидеть добро</a>
-  </div>
- </div>
+  <a class="main-button" href="#mission">Узнать о проекте</a>
 </section>
 
-<section class="mission" id="about">
- <div class="wrap">
-  <div class="section-heading">
-   <div class="kicker">Зачем мы здесь</div>
-   <h2>Не ещё одна социальная сеть.<br>
-       Пространство для человечности.</h2>
-   <p>
-    Мы создаём место, где люди могут находить
-    единомышленников, объединяться вокруг добрых
-    дел и поддерживать друг друга — без принуждения
-    и без культа личности.
-   </p>
-  </div>
+<section class="mission" id="mission">
+  <div class="container">
+    <h2 class="section-title">Наша миссия</h2>
 
-  <div class="quote">
-   <p>«Технология и человек должны служить человечеству».</p>
-   <small>ОСНОВА МАТРИЦЫ-777</small>
+    <p class="section-intro">
+      Мы создаём международное пространство добровольного
+      сотрудничества, где ценность человека определяется
+      не его статусом, богатством или происхождением,
+      а уважением к жизни и отношением к окружающим.
+    </p>
+
+    <div class="mission-quote">
+      «Технология и человек должны служить человечеству».
+    </div>
+
+    <p>
+      МАТРИЦА-777 — это идея объединения людей ради
+      взаимопомощи, сострадания, свободы, достоинства
+      каждого человека и бережного отношения ко всему живому.
+    </p>
+
+    <p>
+      Мы не стремимся создавать культ личности, устанавливать
+      единую идеологию или навязывать кому-либо свои убеждения.
+      Каждый человек свободен участвовать или не участвовать
+      в жизни сообщества.
+    </p>
   </div>
- </div>
 </section>
 
-<section class="values" id="values">
- <div class="wrap">
-  <div class="section-heading">
-   <div class="kicker">Наши ориентиры</div>
-   <h2>Простые ценности. Живые поступки.</h2>
-   <p>
-    Не слова о доброте важнее всего, а то,
-    как мы обращаемся друг с другом
-    и с миром вокруг.
-   </p>
+<section class="principles" id="principles">
+  <div class="container">
+    <h2 class="section-title">Наши принципы</h2>
+
+    <p class="section-intro">
+      Основа сообщества — человеческое достоинство,
+      ответственность и уважение к свободе другого.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="symbol">♡</div>
+        <h3>Безусловная любовь</h3>
+        <p>
+          Доброжелательность, принятие и уважение
+          к жизни во всём её многообразии.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🤝</div>
+        <h3>Взаимопомощь</h3>
+        <p>
+          Поддержка без ожидания награды,
+          выгоды или признания.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">⚖</div>
+        <h3>Справедливость</h3>
+        <p>
+          Честность, равное достоинство
+          и ответственность за свои поступки.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🕊</div>
+        <h3>Свобода</h3>
+        <p>
+          Право на собственное мнение,
+          выбор и добровольное участие.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">☼</div>
+        <h3>Созидание</h3>
+        <p>
+          Объединение усилий ради добрых,
+          полезных и мирных дел.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">∞</div>
+        <h3>Единство</h3>
+        <p>
+          Различия не должны мешать людям
+          находить общий язык и сотрудничать.
+        </p>
+      </article>
+    </div>
   </div>
-
-  <div class="value-grid">
-   <article class="value-card">
-    <div class="symbol">♡</div>
-    <h3>Безусловное уважение</h3>
-    <p>Достоинство человека не зависит от его происхождения,
-       взглядов, достатка или возможностей.</p>
-   </article>
-
-   <article class="value-card">
-    <div class="symbol">❋</div>
-    <h3>Сострадание и помощь</h3>
-    <p>Замечать чужую трудность, слушать без осуждения
-       и помогать настолько, насколько можем.</p>
-   </article>
-
-   <article class="value-card">
-    <div class="symbol">⌁</div>
-    <h3>Бережность ко всему живому</h3>
-    <p>Земля — наш общий дом. Забота о природе,
-       животных и будущих поколениях начинается рядом.</p>
-   </article>
-
-   <article class="value-card">
-    <div class="symbol">∞</div>
-    <h3>Свобода и добровольность</h3>
-    <p>Каждый сам выбирает, как участвовать.
-       Здесь нет обязательных убеждений.</p>
-   </article>
-
-   <article class="value-card">
-    <div class="symbol">✧</div>
-    <h3>Честность и ответственность</h3>
-    <p>Мы стараемся говорить правду, признавать ошибки
-       и бережно относиться к доверию других.</p>
-   </article>
-
-   <article class="value-card">
-    <div class="symbol">☼</div>
-    <h3>Сотрудничество без соперничества</h3>
-    <p>Не рейтинги и награды, а совместное дело,
-       взаимное обучение и поддержка.</p>
-   </article>
-  </div>
- </div>
 </section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <h2 class="section-title">Галерея добрых дел</h2>
+
+    <p class="section-intro">
+      Не для славы, не для награды — для сердца,
+      для своей души это надо, для того, чтобы человек
+      продолжал себя чувствовать человеком, а не винтиком.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="symbol">♡</div>
+        <h3>Помощь человеку</h3>
+        <p>
+          Поддержать того, кто оказался в трудной ситуации.
+          Иногда доброе слово становится первым шагом к переменам.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🐾</div>
+        <h3>Забота о животных</h3>
+        <p>
+          Помощь бездомным животным, ответственное отношение
+          к братьям нашим меньшим и защита живого.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🌱</div>
+        <h3>Добро для природы</h3>
+        <p>
+          Посадить дерево, убрать мусор, сохранить воду
+          или помочь восстановить природное пространство.
+        </p>
+      </article>
+    </div>
+
+    <p class="section-intro">
+      Это будущая галерея историй участников.
+      Возможность публиковать собственные истории
+      мы добавим на следующем этапе.
+    </p>
+  </div>
+</section>
+
+<section class="community" id="community">
+  <div class="container">
+    <h2 class="section-title">Международное сообщество</h2>
+
+    <p class="section-intro">
+      Люди из разных стран могут объединяться вокруг
+      общих созидательных целей, не теряя своей
+      индивидуальности и культурной самобытности.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="symbol">🌍</div>
+        <h3>Без границ</h3>
+        <p>
+          Пространство открыто для людей разных
+          национальностей, культур и языков.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">💬</div>
+        <h3>Диалог</h3>
+        <p>
+          Возможность обмениваться идеями,
+          опытом и находить единомышленников.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🌐</div>
+        <h3>Общие проекты</h3>
+        <p>
+          Совместные инициативы, направленные
+          на помощь людям и сохранение жизни.
+        </p>
+      </article>
+    </div>
+
+    <div class="mission-quote">
+      Мы не должны думать одинаково, чтобы делать добро вместе.
+    </div>
+
+    <p class="section-intro">
+      Инструменты регистрации, общения и создания групп
+      находятся в планах развития проекта.
+    </p>
+  </div>
+</section>
+
+<section class="earth" id="earth">
+  <div class="container">
+    <h2 class="section-title">Наш общий дом — Земля</h2>
+
+    <p class="section-intro">
+      Забота о планете начинается с повседневных поступков
+      и уважения ко всему живому.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="symbol">🌳</div>
+        <h3>Природа</h3>
+        <p>
+          Сохранять леса, воду, почву и природное разнообразие.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🌿</div>
+        <h3>Экология</h3>
+        <p>
+          Уменьшать отходы, бережно использовать ресурсы
+          и поддерживать экологические инициативы.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🌞</div>
+        <h3>Будущее</h3>
+        <p>
+          Создавать условия, в которых будущие поколения
+          смогут жить в гармонии с природой.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="container">
+    <h2 class="section-title">Начнём с себя</h2>
+
+    <p>
+      Если хочешь изменить мир, начни с себя.
+      Один добрый поступок может вдохновить другой,
+      а множество маленьких дел способны изменить
+      жизнь целого сообщества.
+    </p>
+
+    <div class="mission-quote">
+      Единство не означает одинаковость.
+      Единство означает способность быть разными
+      и оставаться людьми.
+    </div>
+  </div>
+</section>
+
 </main>
+
+<footer>
+  <p><strong>МАТРИЦА-777</strong></p>
+  <p>Единство в миллиардах</p>
+  <p>Технология и человек должны служить человечеству.</p>
+  <p>© 2026 МАТРИЦА-777</p>
+</footer>
+
+<script>
+const menuButton = document.getElementById("menuButton");
+const navigation = document.getElementById("navigation");
+
+menuButton.addEventListener("click", function() {
+  const isOpen = navigation.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", isOpen);
+});
+
+navigation.querySelectorAll("a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    navigation.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+  });
+});
+</script>
+
 </body>
 </html>
