@@ -1,165 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="МАТРИЦА-777 — международное пространство единства, взаимопомощи, безусловной любви и заботы о Земле.">
-<meta name="theme-color" content="#102337">
-<title>МАТРИЦА-777 — Единство в миллиардах</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="МАТРИЦА-777 — открытое международное сообщество любви, сострадания и созидания.">
+<meta name="theme-color" content="#101a2b"><title>МАТРИЦА-777 — Единство в миллиардах</title>
 <style>
-:root{--night:#102337;--blue:#183b55;--gold:#d9b96e;--cream:#f7f5ef;--white:#fff;--text:#263746;--muted:#687985}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.7}a{color:inherit}
-header{position:sticky;top:0;z-index:10;background:rgba(16,35,55,.97);color:#fff;box-shadow:0 3px 16px rgba(0,0,0,.15)}
-.nav-wrap{max-width:1150px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.logo{color:var(--gold);font-size:21px;font-weight:bold;text-decoration:none;white-space:nowrap}
-.nav-right{display:flex;align-items:center;gap:14px}
-nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:17px}
-nav a{color:#fff;text-decoration:none;font-size:14px}nav a:hover{color:var(--gold)}
-.lang-button,.menu-button{background:transparent;color:var(--gold);border:1px solid var(--gold);padding:8px 12px;border-radius:7px;font-size:15px;cursor:pointer}
-.menu-button{display:none;color:#fff;font-size:19px}
-.hero{min-height:570px;padding:100px 22px 90px;text-align:center;color:#fff;background:radial-gradient(circle at 50% 35%,#315b70 0%,transparent 48%),linear-gradient(145deg,#0b1d30,#183c53 65%,#102337)}
-.infinity{color:var(--gold);font-size:82px;line-height:1.2}.hero h1{font-size:clamp(34px,6vw,58px);margin:15px 0;letter-spacing:2px}.hero .subtitle{font-size:clamp(19px,3vw,26px);color:#ead9ae}.hero p{max-width:730px;margin:25px auto;font-size:18px}
-.main-button{display:inline-block;margin-top:18px;padding:13px 25px;border:1px solid var(--gold);border-radius:30px;color:var(--night);background:var(--gold);text-decoration:none;font-weight:bold}.main-button:hover{background:#fff}
-section{padding:75px 22px;scroll-margin-top:75px}.container{max-width:1050px;margin:auto}.section-title{text-align:center;color:var(--blue);font-size:clamp(27px,4vw,36px);margin:0 0 18px}.section-intro{text-align:center;max-width:760px;margin:0 auto 38px;color:var(--muted);font-size:17px}
-.mission,.gallery,.closing{background:#fff}.mission-quote{max-width:850px;margin:30px auto;padding:28px;border-left:4px solid var(--gold);background:#f8f5eb;color:var(--blue);font-size:23px;text-align:center}
-.principles,.community{background:#edf1f2}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;padding:25px 22px;border-radius:13px;box-shadow:0 5px 20px rgba(20,45,60,.06)}.card .symbol{font-size:34px;color:#b18b42}.card h3{color:var(--blue);margin:8px 0}
-.earth{color:#fff;background:linear-gradient(140deg,#102c3c,#1e5360)}.earth .section-title{color:#ead9ae}.earth .section-intro{color:#e0e9e8}.earth .card{background:rgba(255,255,255,.09);color:#fff;box-shadow:none;border:1px solid rgba(255,255,255,.15)}.earth .card h3{color:#ead9ae}
-.closing{text-align:center}.closing p{max-width:760px;margin:20px auto;font-size:19px}
-footer{padding:32px 20px;text-align:center;background:var(--night);color:#d8e0e5}footer strong{color:var(--gold)}
-@media(max-width:760px){.nav-wrap{flex-wrap:wrap}.nav-right{margin-left:auto}.menu-button{display:block}nav{display:none;width:100%;flex-direction:column;gap:0;order:3}nav.open{display:flex}nav a{padding:11px 4px;border-top:1px solid rgba(255,255,255,.12)}.cards{grid-template-columns:1fr}.hero{min-height:500px;padding-top:75px}section{padding:58px 18px}}
-</style>
-</head>
+:root{--bg:#101a2b;--panel:#17263b;--gold:#e8c77b;--text:#f4f0e6;--muted:#c1c9d3;--line:#34465d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#263c58,#101a2b 58%);color:var(--text);font:17px/1.7 system-ui,Arial,sans-serif}
+.wrap{width:min(100% - 36px,1000px);margin:auto}a{color:var(--gold)}
+header{position:sticky;top:0;background:#101a2bf2;border-bottom:1px solid var(--line);z-index:5}
+.top{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.brand{color:var(--gold);font-weight:800;letter-spacing:.12em}nav{display:flex;gap:15px;flex-wrap:wrap}nav a{font-size:14px;text-decoration:none;color:var(--muted)}
+button,.btn{border:1px solid var(--gold);border-radius:28px;padding:9px 15px;background:transparent;color:var(--gold);font:inherit;text-decoration:none;cursor:pointer}
+.hero{text-align:center;padding:72px 0}.symbol{font-size:44px;color:var(--gold)}.eyebrow{color:var(--gold);letter-spacing:.16em;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(35px,7vw,66px);line-height:1.1;margin:18px 0}.hero h2{font-size:clamp(19px,3vw,26px);font-weight:400;color:var(--muted)}
+.lead{max-width:780px;margin:24px auto;font-size:19px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.primary{background:var(--gold);color:#172033;font-weight:bold}
+section.content{padding:44px 0;border-top:1px solid var(--line)}h3{font-size:28px;color:var(--gold);margin:0 0 14px}.content>p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:20px}
+.tile{background:#17263bd9;border:1px solid var(--line);border-radius:16px;padding:20px}.tile h4{color:var(--gold);font-size:19px;margin:0 0 8px}.tile p{margin:0;color:var(--muted)}
+.quote{text-align:center;font-size:clamp(22px,4vw,31px);padding:28px 8px}.tag{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:3px 10px;color:var(--gold);font-size:13px;margin-bottom:8px}
+.small,footer{color:var(--muted);font-size:14px}footer{border-top:1px solid var(--line);padding:28px 0 40px}
+@media(max-width:650px){.top{padding:12px 0}.top nav{order:3;width:100%}.hero{padding:48px 0}}
+</style></head>
 <body>
-<header>
-  <div class="nav-wrap">
-    <a class="logo" href="#home">МАТРИЦА-777</a>
-    <div class="nav-right">
-      <button class="lang-button" id="langButton" type="button" aria-label="Switch language">EN</button>
-      <button class="menu-button" id="menuButton" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
-    </div>
-    <nav id="navigation">
-      <a href="#home" data-i18n="navHome">Главная</a>
-      <a href="#mission" data-i18n="navMission">Наша миссия</a>
-      <a href="#principles" data-i18n="navPrinciples">Принципы</a>
-      <a href="#gallery" data-i18n="navGood">Добрые дела</a>
-      <a href="#community" data-i18n="navCommunity">Сообщество</a>
-      <a href="#earth" data-i18n="navEarth">Планета</a>
-    </nav>
-  </div>
-</header>
+<header><div class="wrap top"><div class="brand">МАТРИЦА-777</div>
+<nav><a href="#mission" data-ru="Миссия" data-en="Mission">Миссия</a><a href="#principles" data-ru="Принципы" data-en="Principles">Принципы</a><a href="#participate" data-ru="Участие" data-en="Participation">Участие</a><a href="#development" data-ru="Развитие" data-en="Development">Развитие</a></nav>
+<button id="lang" type="button">EN</button></div></header>
 <main>
-<section class="hero" id="home">
-  <div class="infinity">∞</div>
-  <h1>МАТРИЦА-777</h1>
-  <div class="subtitle" data-i18n="subtitle">Единство в миллиардах</div>
-  <p data-i18n="heroText">Пространство, где люди разных стран, культур и взглядов могут встречаться, поддерживать друг друга и вместе создавать более человечный мир.</p>
-  <a class="main-button" href="#mission" data-i18n="heroButton">Узнать о проекте</a>
-</section>
-<section class="mission" id="mission"><div class="container">
-  <h2 class="section-title" data-i18n="missionTitle">Наша миссия</h2>
-  <p class="section-intro" data-i18n="missionIntro">Мы создаём международное пространство добровольного сотрудничества, где ценность человека определяется не его статусом, богатством или происхождением, а уважением к жизни и отношением к окружающим.</p>
-  <div class="mission-quote" data-i18n="quoteTechnology">«Технология и человек должны служить человечеству».</div>
-  <p data-i18n="missionP1">МАТРИЦА-777 — это идея объединения людей ради взаимопомощи, сострадания, свободы, достоинства каждого человека и бережного отношения ко всему живому.</p>
-  <p data-i18n="missionP2">Мы не стремимся создавать культ личности, устанавливать единую идеологию или навязывать кому-либо свои убеждения. Каждый человек свободен участвовать или не участвовать в жизни сообщества.</p>
-  <p data-i18n="missionP3">Основа нашего замысла — человеческие отношения, построенные на безусловной любви ко всему сущему.</p>
+<section class="wrap hero"><div class="symbol">◇ • ◇</div><div class="eyebrow" data-ru="Открытое пространство единства" data-en="An open space for unity">Открытое пространство единства</div>
+<h1 data-ru="ЕДИНСТВО В МИЛЛИАРДАХ" data-en="UNITY AMONG BILLIONS">ЕДИНСТВО В МИЛЛИАРДАХ</h1>
+<h2 data-ru="Любовь • Сострадание • Созидание" data-en="Love • Compassion • Creation">Любовь • Сострадание • Созидание</h2>
+<p class="lead" data-ru="Международное сообщество людей, стремящихся строить отношения на безусловной любви ко всему сущему и воплощать её в простых, реальных делах." data-en="An international community building relationships on unconditional love for all that exists and expressing it through simple, real actions.">Международное сообщество людей, стремящихся строить отношения на безусловной любви ко всему сущему и воплощать её в простых, реальных делах.</p>
+<div class="actions"><a class="btn primary" href="#principles" data-ru="Наши принципы" data-en="Our principles">Наши принципы</a><a class="btn" href="#participate" data-ru="Как участвовать" data-en="How to participate">Как участвовать</a></div></section>
+<section class="wrap content" id="mission"><h3 data-ru="Наша миссия" data-en="Our mission">Наша миссия</h3>
+<p data-ru="Создавать открытое пространство, где люди разных стран, культур и мировоззрений могут встречаться, общаться и объединяться ради добрых дел. Здесь важны достоинство каждого, свобода выбора и готовность помогать." data-en="To create an open space where people of different countries, cultures and worldviews can meet, communicate and join efforts for good. Dignity, freedom of choice and willingness to help matter here.">Создавать открытое пространство, где люди разных стран, культур и мировоззрений могут встречаться, общаться и объединяться ради добрых дел. Здесь важны достоинство каждого, свобода выбора и готовность помогать.</p>
+<div class="quote" data-ru="«Технология и человек должны служить человечеству»." data-en="“Technology and people must serve humanity.”">«Технология и человек должны служить человечеству».</div></section>
+<section class="wrap content" id="principles"><h3 data-ru="Принципы сообщества" data-en="Community principles">Принципы сообщества</h3><div class="grid">
+<article class="tile"><h4 data-ru="Достоинство и уважение" data-en="Dignity and respect">Достоинство и уважение</h4><p data-ru="Каждый человек ценен. Мы не унижаем и не исключаем людей за их происхождение, взгляды или образ жизни." data-en="Every person has worth. We do not demean or exclude people because of their background, views or way of life.">Каждый человек ценен. Мы не унижаем и не исключаем людей за их происхождение, взгляды или образ жизни.</p></article>
+<article class="tile"><h4 data-ru="Свобода без принуждения" data-en="Freedom without coercion">Свобода без принуждения</h4><p data-ru="Нет обязательной веры, идеологии или единственно правильного пути. Участие добровольно, несогласие допустимо." data-en="There is no required belief, ideology or single correct path. Participation is voluntary and disagreement is allowed.">Нет обязательной веры, идеологии или единственно правильного пути. Участие добровольно, несогласие допустимо.</p></article>
+<article class="tile"><h4 data-ru="Сострадание в действии" data-en="Compassion in action">Сострадание в действии</h4><p data-ru="Поддерживаем взаимопомощь, внимательное общение и инициативы, уменьшающие страдание." data-en="We support mutual aid, thoughtful communication and initiatives that reduce suffering.">Поддерживаем взаимопомощь, внимательное общение и инициативы, уменьшающие страдание.</p></article>
+<article class="tile"><h4 data-ru="Забота обо всём живом" data-en="Care for the living world">Забота обо всём живом</h4><p data-ru="Земля, природа и животные — мир, частью которого мы являемся." data-en="Earth, nature and animals are the living world of which we are part.">Земля, природа и животные — мир, частью которого мы являемся.</p></article>
+<article class="tile"><h4 data-ru="Равное участие" data-en="Shared participation">Равное участие</h4><p data-ru="Инициативы может предлагать каждый. Координаторы подотчётны сообществу." data-en="Anyone can propose initiatives. Coordinators are accountable to the community.">Инициативы может предлагать каждый. Координаторы подотчётны сообществу.</p></article>
+<article class="tile"><h4 data-ru="Честность и безопасность" data-en="Honesty and safety">Честность и безопасность</h4><p data-ru="Не допускаются травля, мошенничество, угрозы и манипуляции. Личные границы уважаются." data-en="Harassment, fraud, threats and manipulation are not acceptable. Personal boundaries are respected.">Не допускаются травля, мошенничество, угрозы и манипуляции. Личные границы уважаются.</p></article>
 </div></section>
-<section class="principles" id="principles"><div class="container">
-  <h2 class="section-title" data-i18n="principlesTitle">Наши принципы</h2>
-  <p class="section-intro" data-i18n="principlesIntro">Основа сообщества — человеческое достоинство, ответственность и уважение к свободе другого.</p>
-  <div class="cards">
-    <article class="card"><div class="symbol">♡</div><h3 data-i18n="loveTitle">Безусловная любовь</h3><p data-i18n="loveText">Доброжелательность, принятие и уважение к жизни во всём её многообразии.</p></article>
-    <article class="card"><div class="symbol">🤝</div><h3 data-i18n="helpTitle">Взаимопомощь</h3><p data-i18n="helpText">Поддержка без ожидания награды, выгоды или признания.</p></article>
-    <article class="card"><div class="symbol">⚖</div><h3 data-i18n="justiceTitle">Справедливость</h3><p data-i18n="justiceText">Честность, равное достоинство и ответственность за свои поступки.</p></article>
-    <article class="card"><div class="symbol">🕊</div><h3 data-i18n="freedomTitle">Свобода</h3><p data-i18n="freedomText">Право на собственное мнение, выбор и добровольное участие.</p></article>
-    <article class="card"><div class="symbol">☼</div><h3 data-i18n="creationTitle">Созидание</h3><p data-i18n="creationText">Объединение усилий ради добрых, полезных и мирных дел.</p></article>
-    <article class="card"><div class="symbol">∞</div><h3 data-i18n="unityTitle">Единство</h3><p data-i18n="unityText">Различия не должны мешать людям находить общий язык и сотрудничать.</p></article>
-  </div>
+<section class="wrap content" id="participate"><h3 data-ru="Как может участвовать каждый" data-en="How anyone can take part">Как может участвовать каждый</h3><div class="grid">
+<article class="tile"><h4 data-ru="Поддержать человека" data-en="Support someone">Поддержать человека</h4><p data-ru="Выслушать, поделиться знаниями, помочь делом или найти тех, кто может помочь." data-en="Listen, share knowledge, offer practical help or connect someone with people who can assist.">Выслушать, поделиться знаниями, помочь делом или найти тех, кто может помочь.</p></article>
+<article class="tile"><h4 data-ru="Позаботиться о Земле" data-en="Care for the Earth">Позаботиться о Земле</h4><p data-ru="Организовать уборку, посадку растений или экологическую инициативу." data-en="Organize a clean-up, plant trees or start an environmental initiative.">Организовать уборку, посадку растений или экологическую инициативу.</p></article>
+<article class="tile"><h4 data-ru="Создать инициативу" data-en="Start an initiative">Создать инициативу</h4><p data-ru="Предложить идею, найти единомышленников и вместе определить посильные шаги." data-en="Share an idea, find collaborators and agree on achievable steps together.">Предложить идею, найти единомышленников и вместе определить посильные шаги.</p></article>
 </div></section>
-<section class="gallery" id="gallery"><div class="container">
-  <h2 class="section-title" data-i18n="galleryTitle">Галерея добрых дел</h2>
-  <p class="section-intro" data-i18n="galleryIntro">Не для славы и не для награды — чтобы человек продолжал чувствовать себя человеком, а не винтиком.</p>
-  <div class="cards">
-    <article class="card"><div class="symbol">♡</div><h3 data-i18n="personTitle">Помощь человеку</h3><p data-i18n="personText">Поддержать того, кто оказался в трудной ситуации. Иногда доброе слово становится первым шагом к переменам.</p></article>
-    <article class="card"><div class="symbol">🐾</div><h3 data-i18n="animalsTitle">Забота о животных</h3><p data-i18n="animalsText">Помощь бездомным животным, ответственное отношение к братьям нашим меньшим и защита живого.</p></article>
-    <article class="card"><div class="symbol">🌱</div><h3 data-i18n="natureTitle">Добро для природы</h3><p data-i18n="natureText">Посадить дерево, убрать мусор, сохранить воду или помочь восстановить природное пространство.</p></article>
-  </div>
-  <p class="section-intro" data-i18n="galleryNote">Это будущая галерея историй участников. Возможность публиковать собственные истории мы добавим на следующем этапе.</p>
-</div></section>
-<section class="community" id="community"><div class="container">
-  <h2 class="section-title" data-i18n="communityTitle">Международное сообщество</h2>
-  <p class="section-intro" data-i18n="communityIntro">Люди из разных стран могут объединяться вокруг общих созидательных целей, не теряя своей индивидуальности и культурной самобытности.</p>
-  <div class="cards">
-    <article class="card"><div class="symbol">🌍</div><h3 data-i18n="bordersTitle">Без границ</h3><p data-i18n="bordersText">Пространство открыто для людей разных национальностей, культур и языков.</p></article>
-    <article class="card"><div class="symbol">💬</div><h3 data-i18n="dialogTitle">Диалог</h3><p data-i18n="dialogText">Возможность обмениваться идеями, опытом и находить единомышленников.</p></article>
-    <article class="card"><div class="symbol">🌐</div><h3 data-i18n="projectsTitle">Общие проекты</h3><p data-i18n="projectsText">Совместные инициативы, направленные на помощь людям и сохранение жизни.</p></article>
-  </div>
-  <div class="mission-quote" data-i18n="quoteUnity">Мы не должны думать одинаково, чтобы делать добро вместе.</div>
-  <p class="section-intro" data-i18n="communityNote">Инструменты регистрации, общения и создания групп находятся в планах развития проекта.</p>
-</div></section>
-<section class="earth" id="earth"><div class="container">
-  <h2 class="section-title" data-i18n="earthTitle">Наш общий дом — Земля</h2>
-  <p class="section-intro" data-i18n="earthIntro">Забота о планете начинается с повседневных поступков и уважения ко всему живому.</p>
-  <div class="cards">
-    <article class="card"><div class="symbol">🌳</div><h3 data-i18n="forestTitle">Природа</h3><p data-i18n="forestText">Сохранять леса, воду, почву и природное разнообразие.</p></article>
-    <article class="card"><div class="symbol">🌿</div><h3 data-i18n="ecologyTitle">Экология</h3><p data-i18n="ecologyText">Уменьшать отходы, бережно использовать ресурсы и поддерживать экологические инициативы.</p></article>
-    <article class="card"><div class="symbol">🌞</div><h3 data-i18n="futureTitle">Будущее</h3><p data-i18n="futureText">Создавать условия, в которых будущие поколения смогут жить в гармонии с природой.</p></article>
-  </div>
-</div></section>
-<section class="closing"><div class="container">
-  <h2 class="section-title" data-i18n="closingTitle">Начнём с себя</h2>
-  <p data-i18n="closingText">Если хочешь изменить мир, начни с себя. Один добрый поступок может вдохновить другой, а множество маленьких дел способны изменить жизнь целого сообщества.</p>
-  <div class="mission-quote" data-i18n="closingQuote">Единство не означает одинаковость. Единство означает способность быть разными и оставаться людьми.</div>
-</div></section>
+<section class="wrap content" id="development"><h3 data-ru="Как развивается проект" data-en="How the project is developing">Как развивается проект</h3><div class="grid">
+<article class="tile"><span class="tag" data-ru="Подготовлено" data-en="Prepared">Подготовлено</span><h4 data-ru="Страница проекта" data-en="Project page">Страница проекта</h4><p data-ru="Миссия, принципы и направления участия на русском и английском языках." data-en="Mission, principles and ways to participate in Russian and English.">Миссия, принципы и направления участия на русском и английском языках.</p></article>
+<article class="tile"><span class="tag" data-ru="Следующий этап" data-en="Next stage">Следующий этап</span><h4 data-ru="Пространство общения" data-en="Community space">Пространство общения</h4><p data-ru="Регистрация, публикации, группы, обсуждения и взаимопомощь." data-en="Registration, posts, groups, discussions and mutual aid.">Регистрация, публикации, группы, обсуждения и взаимопомощь.</p></article>
+<article class="tile"><span class="tag" data-ru="В перспективе" data-en="Future">В перспективе</span><h4 data-ru="Многоязычное сообщество" data-en="A multilingual community">Многоязычное сообщество</h4><p data-ru="Новые языки, инструменты самоуправления, прозрачная модерация и защита участников." data-en="More languages, self-governance tools, transparent moderation and participant protection.">Новые языки, инструменты самоуправления, прозрачная модерация и защита участников.</p></article>
+</div><p class="small" data-ru="Важно: регистрация, публикации, группы и обсуждения пока не подключены. Эта страница знакомит с проектом и не принимает аккаунты или сообщения." data-en="Please note: registration, posts, groups and discussions are not connected yet. This page introduces the project and does not accept accounts or messages.">Важно: регистрация, публикации, группы и обсуждения пока не подключены. Эта страница знакомит с проектом и не принимает аккаунты или сообщения.</p></section>
+<section class="wrap content"><h3 data-ru="Сообщество без культа личности" data-en="A community without a personality cult">Сообщество без культа личности</h3>
+<p data-ru="МАТРИЦА-777 не строится вокруг основателя или единственного центра. Это пространство, которое должно принадлежать участникам: они смогут предлагать проекты, создавать группы, выбирать координаторов и участвовать в общих решениях. Никто не говорит от имени всех." data-en="MATRIX-777 is not built around a founder or a single centre. It is intended as a space belonging to its participants: they can propose projects, create groups, choose coordinators and take part in shared decisions. No one speaks for everyone.">МАТРИЦА-777 не строится вокруг основателя или единственного центра. Это пространство, которое должно принадлежать участникам: они смогут предлагать проекты, создавать группы, выбирать координаторов и участвовать в общих решениях. Никто не говорит от имени всех.</p></section>
 </main>
-<footer>
-  <p><strong>МАТРИЦА-777</strong></p>
-  <p data-i18n="footerSubtitle">Единство в миллиардах</p>
-  <p data-i18n="footerMotto">Технология и человек должны служить человечеству.</p>
-  <p>© 2026 МАТРИЦА-777</p>
-</footer>
+<footer><div class="wrap"><strong>МАТРИЦА-777 · ЕДИНСТВО В МИЛЛИАРДАХ</strong><p data-ru="Открытое сообщество. Добровольное участие. Уважение к каждому." data-en="An open community. Voluntary participation. Respect for everyone.">Открытое сообщество. Добровольное участие. Уважение к каждому.</p><a href="https://github.com/Mi7tra888/matrix-777">Репозиторий проекта</a><p>© МАТРИЦА-777</p></div></footer>
 <script>
-const translations = {
-ru:{
-navHome:"Главная",navMission:"Наша миссия",navPrinciples:"Принципы",navGood:"Добрые дела",navCommunity:"Сообщество",navEarth:"Планета",
-subtitle:"Единство в миллиардах",heroText:"Пространство, где люди разных стран, культур и взглядов могут встречаться, поддерживать друг друга и вместе создавать более человечный мир.",heroButton:"Узнать о проекте",
-missionTitle:"Наша миссия",missionIntro:"Мы создаём международное пространство добровольного сотрудничества, где ценность человека определяется не его статусом, богатством или происхождением, а уважением к жизни и отношением к окружающим.",quoteTechnology:"«Технология и человек должны служить человечеству».",missionP1:"МАТРИЦА-777 — это идея объединения людей ради взаимопомощи, сострадания, свободы, достоинства каждого человека и бережного отношения ко всему живому.",missionP2:"Мы не стремимся создавать культ личности, устанавливать единую идеологию или навязывать кому-либо свои убеждения. Каждый человек свободен участвовать или не участвовать в жизни сообщества.",missionP3:"Основа нашего замысла — человеческие отношения, построенные на безусловной любви ко всему сущему.",
-principlesTitle:"Наши принципы",principlesIntro:"Основа сообщества — человеческое достоинство, ответственность и уважение к свободе другого.",loveTitle:"Безусловная любовь",loveText:"Доброжелательность, принятие и уважение к жизни во всём её многообразии.",helpTitle:"Взаимопомощь",helpText:"Поддержка без ожидания награды, выгоды или признания.",justiceTitle:"Справедливость",justiceText:"Честность, равное достоинство и ответственность за свои поступки.",freedomTitle:"Свобода",freedomText:"Право на собственное мнение, выбор и добровольное участие.",creationTitle:"Созидание",creationText:"Объединение усилий ради добрых, полезных и мирных дел.",unityTitle:"Единство",unityText:"Различия не должны мешать людям находить общий язык и сотрудничать.",
-galleryTitle:"Галерея добрых дел",galleryIntro:"Не для славы и не для награды — чтобы человек продолжал чувствовать себя человеком, а не винтиком.",personTitle:"Помощь человеку",personText:"Поддержать того, кто оказался в трудной ситуации. Иногда доброе слово становится первым шагом к переменам.",animalsTitle:"Забота о животных",animalsText:"Помощь бездомным животным, ответственное отношение к братьям нашим меньшим и защита живого.",natureTitle:"Добро для природы",natureText:"Посадить дерево, убрать мусор, сохранить воду или помочь восстановить природное пространство.",galleryNote:"Это будущая галерея историй участников. Возможность публиковать собственные истории мы добавим на следующем этапе.",
-communityTitle:"Международное сообщество",communityIntro:"Люди из разных стран могут объединяться вокруг общих созидательных целей, не теряя своей индивидуальности и культурной самобытности.",bordersTitle:"Без границ",bordersText:"Пространство открыто для людей разных национальностей, культур и языков.",dialogTitle:"Диалог",dialogText:"Возможность обмениваться идеями, опытом и находить единомышленников.",projectsTitle:"Общие проекты",projectsText:"Совместные инициативы, направленные на помощь людям и сохранение жизни.",quoteUnity:"Мы не должны думать одинаково, чтобы делать добро вместе.",communityNote:"Инструменты регистрации, общения и создания групп находятся в планах развития проекта.",
-earthTitle:"Наш общий дом — Земля",earthIntro:"Забота о планете начинается с повседневных поступков и уважения ко всему живому.",forestTitle:"Природа",forestText:"Сохранять леса, воду, почву и природное разнообразие.",ecologyTitle:"Экология",ecologyText:"Уменьшать отходы, бережно использовать ресурсы и поддерживать экологические инициативы.",futureTitle:"Будущее",futureText:"Создавать условия, в которых будущие поколения смогут жить в гармонии с природой.",closingTitle:"Начнём с себя",closingText:"Если хочешь изменить мир, начни с себя. Один добрый поступок может вдохновить другой, а множество маленьких дел способны изменить жизнь целого сообщества.",closingQuote:"Единство не означает одинаковость. Единство означает способность быть разными и оставаться людьми.",footerSubtitle:"Единство в миллиардах",footerMotto:"Технология и человек должны служить человечеству."
-},
-en:{
-navHome:"Home",navMission:"Our mission",navPrinciples:"Principles",navGood:"Good deeds",navCommunity:"Community",navEarth:"The planet",
-subtitle:"Unity Among Billions",heroText:"A space where people of different countries, cultures and views can meet, support one another and work together to create a more humane world.",heroButton:"Discover the project",
-missionTitle:"Our Mission",missionIntro:"We are creating an international space for voluntary cooperation, where a person's worth is measured not by status, wealth or origin, but by respect for life and care for others.",quoteTechnology:"“Technology and people must serve humanity.”",missionP1:"MATRIX-777 is an idea for bringing people together through mutual aid, compassion, freedom, respect for every person's dignity and care for all living things.",missionP2:"We do not seek to create a personality cult, impose a single ideology or force beliefs on anyone. Everyone is free to participate in the community or not.",missionP3:"At the heart of this vision are human relationships built on unconditional love for all that exists.",
-principlesTitle:"Our Principles",principlesIntro:"The community is grounded in human dignity, responsibility and respect for the freedom of others.",loveTitle:"Unconditional Love",loveText:"Kindness, acceptance and respect for life in all its diversity.",helpTitle:"Mutual Aid",helpText:"Support offered without expecting reward, benefit or recognition.",justiceTitle:"Justice",justiceText:"Honesty, equal dignity and responsibility for our actions.",freedomTitle:"Freedom",freedomText:"The right to one's own opinions, choices and voluntary participation.",creationTitle:"Creation",creationText:"Joining efforts for good, useful and peaceful causes.",unityTitle:"Unity",unityText:"Our differences should not prevent us from understanding one another and working together.",
-galleryTitle:"A Gallery of Good Deeds",galleryIntro:"Not for fame or reward, but so that every person can continue to feel human, not like a cog in a machine.",personTitle:"Helping a Person",personText:"Support someone going through a difficult time. Sometimes a kind word is the first step towards change.",animalsTitle:"Care for Animals",animalsText:"Helping homeless animals, treating our fellow creatures responsibly and protecting life.",natureTitle:"Kindness to Nature",natureText:"Plant a tree, collect litter, conserve water or help restore a natural space.",galleryNote:"This will become a gallery of community stories. The ability to publish your own stories will be added in a later stage.",
-communityTitle:"An International Community",communityIntro:"People from different countries can unite around shared constructive goals while preserving their individuality and cultural identity.",bordersTitle:"Without Borders",bordersText:"This space is open to people of all nationalities, cultures and languages.",dialogTitle:"Dialogue",dialogText:"A place to exchange ideas and experience and find like-minded people.",projectsTitle:"Shared Projects",projectsText:"Joint initiatives focused on helping people and protecting life.",quoteUnity:"We do not have to think alike to do good together.",communityNote:"Registration, communication and group-creation tools are part of the project's future development.",
-earthTitle:"Our Common Home — Earth",earthIntro:"Caring for the planet begins with everyday actions and respect for all living things.",forestTitle:"Nature",forestText:"Protect forests, water, soil and biodiversity.",ecologyTitle:"Ecology",ecologyText:"Reduce waste, use resources responsibly and support environmental initiatives.",futureTitle:"The Future",futureText:"Create conditions in which future generations can live in harmony with nature.",closingTitle:"Let's Begin with Ourselves",closingText:"If you want to change the world, start with yourself. One kind action can inspire another, and many small deeds can transform the life of an entire community.",closingQuote:"Unity does not mean sameness. It means being different and remaining human together.",footerSubtitle:"Unity Among Billions",footerMotto:"Technology and people must serve humanity."
-}};
-let currentLang="ru";
-const langButton=document.getElementById("langButton");
-function setLanguage(lang){
- currentLang=lang;
- document.documentElement.lang=lang;
- document.querySelectorAll("[data-i18n]").forEach(el=>{
-   const key=el.getAttribute("data-i18n");
-   if(translations[lang][key]) el.textContent=translations[lang][key];
- });
- langButton.textContent=lang==="ru"?"EN":"RU";
- langButton.setAttribute("aria-label",lang==="ru"?"Switch to English":"Переключить на русский");
-}
-langButton.addEventListener("click",()=>setLanguage(currentLang==="ru"?"en":"ru"));
-const menuButton=document.getElementById("menuButton");
-const navigation=document.getElementById("navigation");
-menuButton.addEventListener("click",()=>{
- const isOpen=navigation.classList.toggle("open");
- menuButton.setAttribute("aria-expanded",String(isOpen));
-});
-navigation.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
- navigation.classList.remove("open");
- menuButton.setAttribute("aria-expanded","false");
-}));
-</script>
-</body>
-</html>
+(function(){var b=document.getElementById('lang'),l='ru';b.addEventListener('click',function(){l=l==='ru'?'en':'ru';document.documentElement.lang=l;document.querySelectorAll('[data-ru][data-en]').forEach(function(e){e.textContent=e.getAttribute('data-'+l)});b.textContent=l==='ru'?'EN':'RU';});})();
+</script></body></html>
